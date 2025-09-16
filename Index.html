@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="crud container ">
+    <!-- Header -->
+    <h1 class="pt-5 text-center text-dark">Product Management System</h1>
+    <!-- Inputs div -->
+    <div class="inputs">
+      <label class="fw-bold mb-1" for="productName">Product Name</label>
+      <input id="productName" class="form-control mb-2" type="text">
+      <label class="fw-bold mb-1" for="productPrice">Product Price</label>
+      <input id="productPrice" class="form-control mb-2" type="number">
+      <label class="fw-bold mb-1" for="productCategory">Product Category</label>
+      <input id="productCategory" class="form-control mb-2" type="text">
+      <label class="fw-bold mb-1" for="productDesc">Product Desc</label>
+      <textarea id="productDesc" class="form-control mb-2" type="text" style="resize: none;"></textarea>
+    </div>
+    <!-- button add and update -->
+    <div class="w-100 text-center my-5">
+      <button id="btnAdd" class=" btn btn-secondary  w-25">Add Product</button>
+      <button id="update" class=" btn btn-secondary w-25 d-none">Update Product</button>
+    </div>
+    <!-- Search input -->
+    <div class=" w-75 m-auto">
+      <input oninput="Searech(this.value)" type="text" class="form-control my-4" placeholder="Search by name"
+        id="Search">
+    </div>
+    <!-- Table content -->
+    <table class="table table-striped">
+      <thead>
+        <th>Index</th>
+        <th> Products Name </th>
+        <th>Product Price</th>
+        <th>Product Category</th>
+        <th>Product Desc</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="body">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
